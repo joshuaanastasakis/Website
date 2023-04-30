@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import NotFoundView from '../views/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,7 +30,6 @@ const router = createRouter({
     },
   ],
   scrollBehavior: (to, from, savedPosition) => {
-    // console.log('in scroll behaviour: ', to)
     const paths = ['home', 'about', 'projects', 'contact']
     const path = to.path.slice(1)
     if (paths.includes(to.name as string)) {

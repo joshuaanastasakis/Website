@@ -32,30 +32,14 @@ onMounted(() => {
 })
 
 scroll((elements:any) => {
-  // console.log(elements)
   const sorted = elements.sort((a:any,b:any) => {
     const aval = Math.abs(a.val);
     const bval = Math.abs(b.val);
-    // console.log(aval, ", ", bval)
     return aval > bval ? 1 : aval < bval ? -1 : 0;
   });
-  // console.log("sorted: ", sorted)
   const closest = sorted[0];
   if (closest.name!== currentPath) {
     updatePath(closest.name);
-    // if (closest.name==='home') {
-    //   currentPath = 'home';
-    //   history.pushState({}, '', '/')
-    // } else if (closest.name==='about') {
-    //   currentPath = 'about';
-    //   history.pushState({}, '', '/about')
-    // } else if (closest.name==='projects') {
-    //   currentPath = 'projects';
-    //   history.pushState({}, '', '/projects')
-    // } else if (closest.name==='contact') {
-    //   currentPath = 'contact';
-    //   history.pushState({}, '', '/contact')
-    // }
   }
 })
 
