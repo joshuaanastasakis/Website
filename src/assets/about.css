@@ -1,0 +1,83 @@
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #888888;
+    z-index: -2;
+    height: 640px;
+    width: 1000px;
+    max-width: 1000px;
+}
+
+.circle#intro-circle {
+    top: -450px;
+}
+
+div#home > .background-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#home {
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+div#home > h1, h4 {
+    margin-top: 1.75rem;
+    font-weight: 200;
+}
+
+.graph-container {
+    margin-top: 1rem;
+}
+
+td[colspan="3"] {
+    /* background-color: #4bb9b9; */
+    background-color: #BBBBBB;
+}
+td[colspan="2"] {
+    /* background-color: #6fb94b; */
+    background-color: #AAAAAA;
+}
+td[colspan="1"] {
+    /* background-color: #aab94b; */
+    background-color: #999999;
+}
+
+td[colspan] {
+    text-align: right;
+    padding-inline: 0.5rem;
+}
+
+td[colspan]:hover {
+    background-color: #EEEEEE;
+}
+
+td[rowspan]:not(:last-of-type) {
+    border-right: 3px solid #AFAFAF;
+}
+
+th {
+    width: 5rem;
+}
+
+.master {
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+.text-container {
+    margin-left: 0px;
+    width: 100%;
+    max-width: calc(5.25rem * 5);
+}
+
+.text-justify {
+    text-align: justify;
+}

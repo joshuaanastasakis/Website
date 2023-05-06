@@ -1,4 +1,5 @@
 <script lang="ts">
+import Divider from '../components/Divider.vue'
 export default {
     onScroll (e: Event) {
         console.log(e)
@@ -8,7 +9,8 @@ export default {
 
 <template>
   <div id="contact" class="section">
-    contact
+    <h2>Contact</h2>
+    <Divider />
   </div>
 </template>
 

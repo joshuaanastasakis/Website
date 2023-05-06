@@ -14,6 +14,7 @@ import IntroSectionVue from './components/IntroSection.vue'
 import AboutSectionVue from './components/AboutSection.vue'
 import ProjectsSectionVue from './components/ProjectsSection.vue'
 import ContactSectionVue from './components/ContactSection.vue'
+import Divider from './components/Divider.vue'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -38,6 +39,7 @@ app.component('IntroSection', IntroSectionVue)
 app.component('AboutSection', AboutSectionVue)
 app.component('ProjectsSection', ProjectsSectionVue)
 app.component('ContactSection', ContactSectionVue)
+app.component('Divider', Divider)
 
 app.use(createPinia())
 app.use(router)

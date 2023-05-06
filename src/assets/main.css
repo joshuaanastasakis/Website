@@ -1,13 +1,17 @@
-@import './base.css';
+@import './intro.css';
+@import './about.css';
+
 
 body {
   display: grid;
   grid-template-rows: auto 1fr;
+  gap: 8rem;
   min-height: 100vh;
   min-height: 100dvh;
   margin: 0;
   background-color: #DDDDDD;
   font-family: 'DM Mono', monospace;
+  position: relative;
 }
 
 header > nav {
@@ -33,16 +37,32 @@ nav * {
 }
 
 main {
-  max-width: 640px;
+  max-width: 1000px;
   margin-inline: auto;
 }
 
-.section {
+.section:not(#home) {
   padding-top: 64px;
   min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .active {
   text-decoration: underline;
   font-weight: 600;
+}
+
+.horizontal-divider {
+  width: 300px;
+  max-widtH: 300px;
+  background-color: #888888;
+  height: 0.25rem;
+  border-radius: 25px;
+}
+
+h2, h3 {
+  font-weight: 200;
+  margin-bottom: 0px;
 }
