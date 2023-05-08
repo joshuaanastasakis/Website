@@ -1,5 +1,5 @@
 <script lang="ts">
-import Divider from '../components/Divider.vue'
+import Divider from './Divider.vue'
 export default {
     onScroll (e: Event) {
         console.log(e)

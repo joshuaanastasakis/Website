@@ -61,10 +61,16 @@ td[colspan]:hover {
 
 td[rowspan]:not(:last-of-type) {
     border-right: 3px solid #AFAFAF;
+    text-align: right;
+    padding-right: 0.5rem;
 }
 
 th {
-    width: 5rem;
+    width: 8rem;
+}
+
+table {
+    max-width: 1000px;
 }
 
 .master {
@@ -75,7 +81,7 @@ th {
 .text-container {
     margin-left: 0px;
     width: 100%;
-    max-width: calc(5.25rem * 5);
+    max-width: 640px;
 }
 
 .text-justify {

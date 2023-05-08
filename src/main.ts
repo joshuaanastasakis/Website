@@ -15,6 +15,9 @@ import AboutSectionVue from './components/AboutSection.vue'
 import ProjectsSectionVue from './components/ProjectsSection.vue'
 import ContactSectionVue from './components/ContactSection.vue'
 import Divider from './components/Divider.vue'
+import FirebaseIcon from './components/icons/FirebaseIcon.vue'
+import Icon from './components/icons/Icon.vue'
+import ProjectCardBig from './components/ProjectCardBig.vue'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -40,6 +43,9 @@ app.component('AboutSection', AboutSectionVue)
 app.component('ProjectsSection', ProjectsSectionVue)
 app.component('ContactSection', ContactSectionVue)
 app.component('Divider', Divider)
+app.component('FirebaseIcon', FirebaseIcon)
+app.component('Icon', Icon)
+app.component('ProjectCardBig', ProjectCardBig)
 
 app.use(createPinia())
 app.use(router)

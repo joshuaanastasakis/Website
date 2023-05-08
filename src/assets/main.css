@@ -1,5 +1,6 @@
 @import './intro.css';
 @import './about.css';
+@import './projects.css';
 
 
 body {
@@ -28,6 +29,8 @@ header > nav {
   gap: 1rem;
 
   height: 4rem;
+
+  z-index: 10;
 }
 
 nav * {
@@ -43,10 +46,12 @@ main {
 
 .section:not(#home) {
   padding-top: 64px;
-  min-height: 1000px;
+  padding-bottom: 64px;
+  /* min-height: 1000px; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-inline: 1rem;
 }
 
 .active {
@@ -56,7 +61,7 @@ main {
 
 .horizontal-divider {
   width: 300px;
-  max-widtH: 300px;
+  max-width: 300px;
   background-color: #888888;
   height: 0.25rem;
   border-radius: 25px;

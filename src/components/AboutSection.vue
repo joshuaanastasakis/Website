@@ -1,5 +1,5 @@
 <script lang="ts">
-import Divider from '../components/Divider.vue'
+import Divider from './Divider.vue'
 
 interface Category {
   type: string,
