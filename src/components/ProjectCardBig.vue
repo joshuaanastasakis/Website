@@ -34,14 +34,15 @@ const defaultImage = '/public/images/noimage.png';
 </script>
 
 <template>
-  <div class="project-section">
+  <div class="project-section" :class="{'blank-project': !props.title}">
         <div class="title-container">
-          <h3>{{props.title ? props.title : "COMING SOON"}}</h3>
+          <h3>{{props.title ? props.title : ""}}</h3>
           <div class="title-icons">
             <Icon v-for="item of props.stack" :title="item"></Icon>
           </div>
         </div>
-        <a class="project-image-container" :href="props.link ? props.link : ''" :target="props.link ? '_blank' : ''" :rel="props.link ? 'noopener' : ''">
+        <a v-if="!props.title" class="project-image-container blank-project"></a>
+        <a v-if="props.title" class="project-image-container" :href="props.link ? props.link : ''" :target="props.link ? '_blank' : ''" :rel="props.link ? 'noopener' : ''">
           <img class="project-image" :src="props.img ? props.img : defaultImage" />
           <div class="overlay">
             <div class="stack-container">

@@ -33,7 +33,7 @@ const projects = {
     <Divider />
     <div class="main-projects-container">
       <ProjectCardBig v-for="project of projects" :title="project.title" :img="project.img" :link="project.link" :stack="project.stack" />
-      <ProjectCardBig v-if="Object.keys(projects).length % 2 !== 0" title="" :img="null" :link="null" :stack="null" />
+      <ProjectCardBig class="project-blank" v-if="Object.keys(projects).length % 2 !== 0" title="" :img="null" :link="null" :stack="null" />
     </div>
     <!-- <div class="projects-grid-container">
       <a class="project-card" href="https://csc301a2-fc4e2.web.app/" target="_blank" rel="noopener noreferrer">
