@@ -35,17 +35,6 @@ const projects = {
       <ProjectCardBig v-for="project of projects" :title="project.title" :img="project.img" :link="project.link" :stack="project.stack" />
       <ProjectCardBig class="project-blank" v-if="Object.keys(projects).length % 2 !== 0" title="" :img="null" :link="null" :stack="null" />
     </div>
-    <!-- <div class="projects-grid-container">
-      <a class="project-card" href="https://csc301a2-fc4e2.web.app/" target="_blank" rel="noopener noreferrer">
-        Project 1
-      </a>
-      <a class="project-card">
-        Project 2
-      </a>
-      <a class="project-card">
-        Project 3
-      </a>
-    </div> -->
   </div>
 </template>
 
