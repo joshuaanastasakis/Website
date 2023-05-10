@@ -9,7 +9,7 @@ const projects = {
     title: "Restify",
     stack: ["github", "react", "python"],
     link: "https://github.com/joshuaanastasakis/Restify",
-    img: "/public/images/Restify.png",
+    img: "/images/Restify.png",
   },
   Simulence: {
     title: "Simulence",
@@ -21,7 +21,7 @@ const projects = {
     title: "Checkout Calculator",
     stack: ["github", "vue"],
     link: "https://github.com/joshuaanastasakis/CSC301A2",
-    img: "/public/images/Simple Checkout Price Calculator.png",
+    img: "/images/Simple Checkout Price Calculator.png",
   },
 }
 

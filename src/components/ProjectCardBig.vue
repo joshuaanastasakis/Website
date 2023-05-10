@@ -29,7 +29,7 @@ const props = defineProps<{
   link: string | null
 }>();
 
-const defaultImage = '/public/images/noimage.png';
+const defaultImage = '/images/noimage.png';
 
 </script>
 
