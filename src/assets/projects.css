@@ -116,11 +116,3 @@ a {
         display: none;
     }
 }
-
-.error {
-    background-color: red;
-}
-
-.submit-button {
-    background-color: green;
-}

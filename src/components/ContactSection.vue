@@ -49,26 +49,30 @@ export default {
       
     },
     validateInputs() {
-      if (this.name.length < 2) {
-        this.error_name=true;
+      if (this.name.length===0 && this.email.length===0 && this.message.length===0) {
+        this.disableButton = true;
+        this.error_name=false;
+        this.error_email=false;
+        this.error_message=false;
         return false;
+      }
+      if (this.name.length===0) {
+        this.error_name=true;
       } else {
         this.error_name=false;
       }
       if (this.email.length < 5) {
         this.error_email=true;
-        return false;
       } else {
         this.error_email=false;
       }
       if (this.message.length === 0) {
         this.error_message=true;
-        return false;
       } else {
         this.error_message=false;
       }
       this.disableButton = false;
-      return true;
+      return !(this.error_name || this.error_email || this.error_message);
     }
   },
   watch: {
@@ -109,11 +113,12 @@ export default {
         <label>Message</label>
         <textarea :class="{'error': error_message}" name="message" v-model="message"></textarea>
       </div>
-      <input :disabled="disableSendButton" class="submit-button" type="submit" value="Send">
+      <input :disabled="disableSendButton" class="submit-button" type="submit" value="Send Email">
     </form>
     <div class="icon-container">
-      <Icon title="github2xl"></Icon>
+      <Icon title="github2xl" :href="'https://github.com/joshuaanastasakis'"></Icon>
       <Icon title="email2xl"></Icon>
+      <Icon title="linkedin2xl"></Icon>
     </div>
   </div>
 </template>
