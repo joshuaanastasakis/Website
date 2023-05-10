@@ -1,5 +1,8 @@
 import { createApp, nextTick } from 'vue'
 import { createPinia } from 'pinia'
+import ToastPlugin from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-bootstrap.css';
+
 // import VueScrollHook from 'vue-scroll-hook'
 
 import App from './App.vue'
@@ -49,15 +52,8 @@ app.component('ProjectCardBig', ProjectCardBig)
 
 app.use(createPinia())
 app.use(router)
-// app.use(VueScrollHook)
-
-// router.afterEach((to, from, next) => {
-//   if (to.hash) {
-//     console.log(`Scroll: ${to.hash}`)
-//     nextTick().then(() => VueScrollTo.scrollTo(to.hash, 700, {easing: 'ease', cancelable: false}))
-//   }
-//   if (to.path==='/projects') {
-//   }
-// })
+app.use(ToastPlugin, {
+  position: 'bottom-right'
+})
 
 app.mount('#app')
