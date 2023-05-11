@@ -52,7 +52,7 @@ export default {
     <h2>About</h2>
     <Divider />
     <div class="text-container">
-      <p class="text-justify">I have 10+ years of university, workplace and self-taught experience that has allowed my passion for programming to flurish.</p>
+      <p class="text-justify">I have 10+ years of university, workplace and self-taught experience that has allowed my passion for programming to flourish.</p>
     </div>
     <h3>Experience</h3>
     <div class="graph-container">
