@@ -2,7 +2,7 @@
 import Divider from './Divider.vue'
 import Icon from './icons/Icon.vue';
 import emailjs from '@emailjs/browser';
-import SECRETS from '../../SECRETS.js'
+// import SECRETS from '../../SECRETS.js'
 
 export default {
   data() {
@@ -27,7 +27,7 @@ export default {
       console.log(this.$refs.form)
       if (this.validateInputs()) {
         this.disableButton = true;
-        emailjs.sendForm(SECRETS.EMAILJS_SERVICE_ID, SECRETS.EMAILJS_TEMPLATE_ID, this.$refs.form as HTMLFormElement, SECRETS.EMAILJS_PUBLIC_KEY)
+        emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID as string, import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string, this.$refs.form as HTMLFormElement, import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string)
         .then((res) => {
           console.log(res)
           this.$toast.open({

@@ -6,7 +6,8 @@ import ContactSection from '../components/ContactSection.vue'
 import VueScrollTo from 'vue-scrollto'
 import { useRouter, useRoute } from 'vue-router'
 import { ref, onMounted } from 'vue'
-import { useScroll } from '../hooks/useScroll.js'
+import { useScroll } from '../hooks/useScroll'
+// const useScroll = require('../hooks/useScroll.js')
 
 const route = useRoute()
 const router = useRouter()
